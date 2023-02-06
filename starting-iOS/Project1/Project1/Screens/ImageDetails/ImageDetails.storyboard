@@ -18,10 +18,12 @@
                         <subviews>
                             <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="1AE-sw-CrN">
                                 <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
+                                <accessibility key="accessibilityConfiguration" identifier="ImageView"/>
                             </imageView>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="vDu-zF-Fre"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <accessibility key="accessibilityConfiguration" identifier="ImageDetails"/>
                         <constraints>
                             <constraint firstItem="vDu-zF-Fre" firstAttribute="trailing" secondItem="1AE-sw-CrN" secondAttribute="trailing" id="ORa-AE-y5S"/>
                             <constraint firstItem="1AE-sw-CrN" firstAttribute="leading" secondItem="vDu-zF-Fre" secondAttribute="leading" id="b6v-r6-zyV"/>
