@@ -37,6 +37,7 @@ class ViewController: UIViewController {
                 pictures.append(item)
             }
         }
+        pictures = pictures.sorted()
         DispatchQueue.main.async {
             self.tableView.reloadData()
         }
