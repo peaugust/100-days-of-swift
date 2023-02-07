@@ -20,6 +20,8 @@ class ViewController: UIViewController {
         super.viewDidLoad()
         getData()
         setupTableView()
+        
+        navigationItem.title = "Storm Viewer"
     }
 
     func setupTableView() {
@@ -48,7 +50,7 @@ class ViewController: UIViewController {
             let viewController = ImageDetailsViewController(coder: creator, imageName: imageName)
             return viewController
         }
-        self.present(viewController, animated: true)
+        self.navigationController?.present(viewController, animated: true)
     }
 }
 
@@ -71,7 +73,6 @@ extension ViewController: UITableViewDelegate {
     func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
         let imageName = pictures[indexPath.row]
         self.presentImageDetails(using: imageName)
-        
     }
 }
 

@@ -22,12 +22,13 @@ final class Project1UITests: XCTestCase {
         // Put teardown code here. This method is called after the invocation of each test method in the class.
     }
     
-    func testTableViewDisplay() throws {
+    func testMainViewController() throws {
         let app = XCUIApplication()
         app.launch()
         
+        let navBar = app.navigationBars.element
         let tableView = app.tables.element
-        
+        XCTAssertEqual(navBar.identifier, "Storm Viewer", "NavigationBar title isn't showing correct title")
         XCTAssertTrue(tableView.exists)
     }
 
